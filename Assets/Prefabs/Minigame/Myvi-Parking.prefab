@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6659849206178562518}
   - component: {fileID: 6247891559449206464}
   m_Layer: 0
-  m_Name: Myvi
+  m_Name: Myvi-Parking
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
