@@ -15,14 +15,14 @@ public class SamanUI : MonoBehaviour
     }
     private void OnEnable()
     {
-        MinigameManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        MinigameManager.OnGameStateChanged += OnGameStateChanged;
     }
 
 
 
     private void OnDisable()
     {
-        MinigameManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+        MinigameManager.OnGameStateChanged -= OnGameStateChanged;
 
     }
 
