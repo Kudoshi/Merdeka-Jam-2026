@@ -18,6 +18,24 @@ public class CarParkingMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
+    private void OnEnable()
+    {
+        MinigameManager.OnGameStateChanged += GameStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        MinigameManager.OnGameStateChanged -= GameStateChanged;
+    }
+
+    private void GameStateChanged(GameState state)
+    {
+        if (state != GameState.MINIGAME_SCENE)
+        {
+            this.enabled = false;
+        }
+    }
+
     private void Update()
     {
         _input = new Vector2();

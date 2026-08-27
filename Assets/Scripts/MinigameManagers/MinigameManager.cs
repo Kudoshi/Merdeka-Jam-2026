@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MinigameManager : Singleton<MinigameManager>
 {
-    public event Action<GameState> OnGameStateChanged;
+    public static event Action<GameState> OnGameStateChanged;
 
     [SerializeField] private SO_Minigame _minigameSO;
     [SerializeField] private int _lifeMaxCount = 5;

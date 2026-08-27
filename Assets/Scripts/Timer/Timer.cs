@@ -16,12 +16,12 @@ public class Timer : Singleton<Timer>
 
     private void OnEnable()
     {
-        MinigameManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        MinigameManager.OnGameStateChanged += OnGameStateChanged;
     }
 
     private void OnDisable()
     {
-        MinigameManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+        MinigameManager.OnGameStateChanged -= OnGameStateChanged;
 
     }
     private void OnGameStateChanged(GameState state)
