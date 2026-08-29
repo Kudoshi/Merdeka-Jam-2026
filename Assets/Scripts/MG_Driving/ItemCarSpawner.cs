@@ -48,14 +48,20 @@ public class ItemCarSpawner : MonoBehaviour
         {
             if (nextCarDecision == 0) // Lorry
                 yield return new WaitForSeconds(0.1f);
-            int lane;
             
-            // Get lane
-            while (true)
+            int lane = 0;
+            
+            if (_spawnPoints.Length > 1)
             {
-                lane = UnityEngine.Random.Range(0, _spawnPoints.Length);
-                if (lane != _clearLane) break;
+                // Get lane
+                while (true)
+                {
+                    lane = UnityEngine.Random.Range(0, _spawnPoints.Length);
+                    if (lane != _clearLane) break;
+                }
             }
+
+            
 
             GameObject car = _carPf[nextCarDecision];
             Instantiate(car, _spawnPoints[lane].position, _spawnPoints[lane].rotation);
