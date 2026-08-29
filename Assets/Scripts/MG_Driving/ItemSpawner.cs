@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _objectPf;
+    [SerializeField] private GameObject[] _objectPfs;
     [SerializeField] private Vector2 _spawnTime;
 
     private void Start()
@@ -25,7 +25,9 @@ public class ItemSpawner : MonoBehaviour
 
             yield return new WaitForSeconds(waitTime);
 
-            Instantiate(_objectPf, transform.position, transform.rotation);
+            int itemDecision = UnityEngine.Random.Range(0, _objectPfs.Length);
+
+            Instantiate(_objectPfs[itemDecision], transform.position, transform.rotation);
         }
     }
 }

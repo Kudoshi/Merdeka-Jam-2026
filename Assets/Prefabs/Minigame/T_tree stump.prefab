@@ -54,10 +54,77 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 41ba7d0f4c6c8b7419c6c41f55a50e69, type: 2}
     - target: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
       propertyPath: m_Name
-      value: tree3
+      value: T_tree stump
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8590016066565633375}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6176448024136861776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4200222562909096500}
   m_SourcePrefab: {fileID: 100100000, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+--- !u!1 &5800278502256925027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 694845cf18b565d4eb0230471b9032a8, type: 3}
+  m_PrefabInstance: {fileID: 6683292647787258930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8590016066565633375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800278502256925027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed219384eeab0e40bf74c1c6faba42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemMovement
+  _extraSpeed: -20
+  _isConsistentSpeed: 0
+  _consistentSpeed: 0
+--- !u!65 &-6176448024136861776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800278502256925027}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.027139373, y: 0.025485128, z: 0.01970751}
+  m_Center: {x: -0.0012085936, y: 0.0015341204, z: 0.009853755}
+--- !u!114 &-4200222562909096500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800278502256925027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38386a5c4b158eb45afbb87af9913246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  _obstacleType: 7

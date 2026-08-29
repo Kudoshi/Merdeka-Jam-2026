@@ -124,5 +124,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d4d0c58ae81b042bbd9e3967ed2847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSpawner
-  _objectPf: {fileID: 6212899675932585709, guid: 9f8c5be43796de249920afa087b42d10, type: 3}
-  _spawnTime: {x: 2, y: 7}
+  _objectPfs:
+  - {fileID: 6054909457459211761, guid: 6d897ca70713e5941b1b24b69a62090e, type: 3}
+  - {fileID: 3518335551198898801, guid: 3d39180d9fbfe2b42bb367d0e8a53e33, type: 3}
+  - {fileID: 5793237305148870719, guid: f723f874c655db940ba0f47427c96e2b, type: 3}
+  - {fileID: 1642719871641350209, guid: e44aa116619a4324bb2eea5a5296b87f, type: 3}
+  - {fileID: 5800278502256925027, guid: 81c9f2740b3098142a9530d86cb61ac1, type: 3}
+  - {fileID: 6050924191752559412, guid: 07e5c20b3d2c02b4cad175912408e682, type: 3}
+  - {fileID: 8351530844419379498, guid: e1c1d55909eb09b47af4d6f22ee1dad2, type: 3}
+  - {fileID: 8298231170553557441, guid: a283e0e68db4fd54ba0f5f289525c3dd, type: 3}
+  - {fileID: 1908767246468463731, guid: 12e669ba61705a645900732f4556f97d, type: 3}
+  - {fileID: 4936854859337746424, guid: ef11a15769d79a24699c2b7574ef8ec1, type: 3}
+  - {fileID: 905042236090146565, guid: 673cbe0ce6815f749b14bafb52807602, type: 3}
+  _spawnTime: {x: 0.5, y: 4}
