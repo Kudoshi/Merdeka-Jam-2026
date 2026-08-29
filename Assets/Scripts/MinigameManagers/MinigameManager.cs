@@ -27,13 +27,18 @@ public class MinigameManager : Singleton<MinigameManager>
     private void Awake()
     {
         SetSingletonDontDestroyOnLoad(this);
-        StartGameSession();
+        ResetGameSession();
     }
 
-    public void StartGameSession()
+    public void ResetGameSession()
     {
         _minigameRound = 1;
         _currentLife = _lifeMaxCount;
+    }
+
+    public void ForceGameGameState(GameState gameState)
+    {
+        _gameLevelType = gameState;
     }
 
     public void LoseMinigame()
@@ -139,5 +144,5 @@ public class MinigameManager : Singleton<MinigameManager>
 
 public enum GameState
 {
-    TRANSITION_SCENE, MINIGAME_SCENE, MINIGAME_SCENE_LOSE, MINIGAME_SCENE_WIN
+    TRANSITION_SCENE, MINIGAME_SCENE, MINIGAME_SCENE_LOSE, MINIGAME_SCENE_WIN, MAIN_MENU
 }
