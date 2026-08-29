@@ -1,5 +1,6 @@
 using Kudoshi.Utilities;
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class MinigameManager : Singleton<MinigameManager>
     [SerializeField] private SO_Minigame _minigameSO;
     [SerializeField] private int _lifeMaxCount = 5;
     [SerializeField] private float _timeWaitAfterMinigameEnd = 3.0f;
+    [SerializeField] private float _transitionToGameEndTime = 2.5f;
 
     private GameState _gameLevelType;
     private MinigameData _currentMinigame = new MinigameData();
@@ -44,32 +46,51 @@ public class MinigameManager : Singleton<MinigameManager>
 
         OnGameStateChanged?.Invoke(GameState.MINIGAME_SCENE_LOSE);
 
-        MinigameEnd();
+        StartCoroutine(TransitionToGameEndCr());
     }
 
     public void WinMinigame()
     {
         OnGameStateChanged?.Invoke(GameState.MINIGAME_SCENE_WIN);
         Debug.Log("Game Win");
+        StartCoroutine(TransitionToGameEndCr());
 
-        Util.WaitForSeconds(this, () =>
+    }
+
+    private IEnumerator TransitionToGameEndCr()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < _transitionToGameEndTime)
         {
-            MinigameEnd();
-        }, _timeWaitAfterMinigameEnd);
+            elapsed += Time.unscaledDeltaTime;
+
+            Time.timeScale = Mathf.Lerp(1f, 0f, elapsed / _transitionToGameEndTime);
+
+            yield return null;
+        }
+
+        Time.timeScale = 0f;
+
+        yield return new WaitForSecondsRealtime(
+            _timeWaitAfterMinigameEnd - _transitionToGameEndTime
+        );
+
+        MinigameEnd();
     }
 
     private void MinigameEnd()
     {
-        Util.WaitForSeconds(this, () =>
+        Time.timeScale = 1;
+        if (_currentLife <= 0)
         {
-            if (_currentLife <= 0)
-            {
-                GameEnd();
-                return;
-            }
-
+            GameEnd();
+            return;
+        }
+        else
+        {
             GoNextScene();
-        }, _timeWaitAfterMinigameEnd);
+        }
     }
 
     private void GoNextScene()
