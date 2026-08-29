@@ -42,7 +42,6 @@ public class CarDrivingSpeed : MonoBehaviour
             CurrentSpeed = _minimumSpeed;
         }
 
-            Debug.Log(CurrentSpeed);
     }
 
     public void HitObstacle()

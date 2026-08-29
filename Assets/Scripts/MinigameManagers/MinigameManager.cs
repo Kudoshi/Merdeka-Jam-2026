@@ -12,6 +12,7 @@ public class MinigameManager : Singleton<MinigameManager>
     [SerializeField] private int _lifeMaxCount = 5;
     [SerializeField] private float _timeWaitAfterMinigameEnd = 3.0f;
     [SerializeField] private float _transitionToGameEndTime = 2.5f;
+    [SerializeField] private float _minTimeScale;
 
     private GameState _gameLevelType;
     private MinigameData _currentMinigame = new MinigameData();
@@ -65,12 +66,12 @@ public class MinigameManager : Singleton<MinigameManager>
         {
             elapsed += Time.unscaledDeltaTime;
 
-            Time.timeScale = Mathf.Lerp(1f, 0f, elapsed / _transitionToGameEndTime);
+            Time.timeScale = Mathf.Lerp(1f, _minTimeScale, elapsed / _transitionToGameEndTime);
 
             yield return null;
         }
 
-        Time.timeScale = 0f;
+        Time.timeScale = _minTimeScale;
 
         yield return new WaitForSecondsRealtime(
             _timeWaitAfterMinigameEnd - _transitionToGameEndTime
