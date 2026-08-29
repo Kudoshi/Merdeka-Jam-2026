@@ -100,9 +100,10 @@ GameObject:
   - component: {fileID: 8485486903148145615}
   - component: {fileID: 5587295573056120986}
   - component: {fileID: 4093929609074475527}
+  - component: {fileID: 8528106621496756080}
   m_Layer: 0
   m_Name: Car1
-  m_TagString: Car
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,6 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemMovement
   _extraSpeed: 0
+  _isConsistentSpeed: 0
+  _consistentSpeed: 0
 --- !u!65 &4093929609074475527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -157,3 +160,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.5, z: 4.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8528106621496756080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8537541128056629674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38386a5c4b158eb45afbb87af9913246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  _obstacleType: 1

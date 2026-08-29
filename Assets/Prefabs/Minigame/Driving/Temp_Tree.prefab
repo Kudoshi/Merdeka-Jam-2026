@@ -125,9 +125,10 @@ GameObject:
   - component: {fileID: 822179736595206427}
   - component: {fileID: 1892617237443594575}
   - component: {fileID: -8553117195170458687}
+  - component: {fileID: 5067797552524995604}
   m_Layer: 0
   m_Name: Temp_Tree
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,3 +193,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 5.726268, z: 1}
   m_Center: {x: 0, y: 2.363134, z: 0}
+--- !u!114 &5067797552524995604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6212899675932585709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38386a5c4b158eb45afbb87af9913246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  _obstacleType: 6

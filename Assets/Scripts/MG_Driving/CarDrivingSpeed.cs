@@ -18,6 +18,8 @@ public class CarDrivingSpeed : MonoBehaviour
     [SerializeField] private float _shakeDurationGrass;
     [SerializeField] private float _grassSlowSpeed;
 
+    [Header("Hit Target")]
+    [SerializeField] private DriveHitTargetController _controller; 
 
     public static float CurrentSpeed;
     public static float MaxSpeed;
@@ -44,17 +46,20 @@ public class CarDrivingSpeed : MonoBehaviour
 
     }
 
-    public void HitObstacle()
+    public void HitObstacle(bool triggerInvincibility)
     {
         CinemachineShake.Instance.ShakeCamera(_shakeIntensity, _shakeDuration);
 
-        _invincibility.TriggerInvincibility(_invincibilityTime);
-        _invincible = true;
-
-        Util.WaitForSeconds(this, () =>
+        if (triggerInvincibility)
         {
-            _invincible = false;
-        }, _invincibilityTime);
+            _invincibility.TriggerInvincibility(_invincibilityTime);
+            _invincible = true;
+
+            Util.WaitForSeconds(this, () =>
+            {
+                _invincible = false;
+            }, _invincibilityTime);
+        }
 
         CurrentSpeed /= 2;
 
@@ -75,9 +80,23 @@ public class CarDrivingSpeed : MonoBehaviour
     {
         if (_invincible) return;
 
-        if (other.CompareTag("Car"))
+        if (!other.CompareTag("Obstacle")) return;
+
+
+        if (_controller != null && other.TryGetComponent<Obstacle>(out Obstacle obs) && _controller.HitTarget(obs))
         {
-            HitObstacle();
+            HitObstacle(false);
         }
+        else
+        {
+            HitObstacle(true);
+        }
+
+
+    }
+
+    private void HitTarget()
+    {
+
     }
 }
