@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 520668305200218448}
   - component: {fileID: 7991206733737399512}
   - component: {fileID: 3033351256990871031}
+  - component: {fileID: 7399147475830069006}
   m_Layer: 0
   m_Name: Myvi-Parking
   m_TagString: Player
@@ -124,6 +125,7 @@ MonoBehaviour:
   _shakeIntensityGrass: 1
   _shakeDurationGrass: 0.1
   _grassSlowSpeed: 15
+  _controller: {fileID: 0}
 --- !u!114 &3033351256990871031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +139,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarInvincibility
   _flashTime: 0.2
+--- !u!114 &7399147475830069006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749780647672420395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822313f8fb446a8408017998ed53d07c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  _rumbleDuration: 0.1
+  _positionStrength: 0.02
+  _rotationStrength: 1.5
+  _vibrato: 8
+  _randomness: 90
 --- !u!1001 &610410654026796186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -216,10 +235,94 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3783866463504858568, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5628042560089899592}
+    - targetCorrespondingSourceObject: {fileID: -6447956693202267093, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 17211079733260840}
+    - targetCorrespondingSourceObject: {fileID: -4428122382357316569, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6748342462315497033}
+    - targetCorrespondingSourceObject: {fileID: 8465327105431257849, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8106239902691490027}
   m_SourcePrefab: {fileID: 100100000, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
 --- !u!4 &1149020695164676977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
   m_PrefabInstance: {fileID: 610410654026796186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3385823795703060657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6447956693202267093, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+  m_PrefabInstance: {fileID: 610410654026796186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &17211079733260840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3385823795703060657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50356ebb979a0e14ca1ccc53727cbc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelsAnimation
+  _speed: -2000
+--- !u!1 &4393934068288975186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783866463504858568, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+  m_PrefabInstance: {fileID: 610410654026796186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5628042560089899592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393934068288975186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50356ebb979a0e14ca1ccc53727cbc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelsAnimation
+  _speed: -2000
+--- !u!1 &5401147903941226685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4428122382357316569, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+  m_PrefabInstance: {fileID: 610410654026796186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6748342462315497033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401147903941226685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50356ebb979a0e14ca1ccc53727cbc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelsAnimation
+  _speed: -2000
+--- !u!1 &9007902288455847523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8465327105431257849, guid: 6c0cad0c31c802a4e95ef0e26e9a39cf, type: 3}
+  m_PrefabInstance: {fileID: 610410654026796186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8106239902691490027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007902288455847523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50356ebb979a0e14ca1ccc53727cbc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelsAnimation
+  _speed: -2000
