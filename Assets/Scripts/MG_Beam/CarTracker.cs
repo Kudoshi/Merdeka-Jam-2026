@@ -59,16 +59,16 @@ public class CarTracker : Singleton<CarTracker>
     {
         Transform car = _trackedCar;
 
-        while (Vector3.Distance(car.position, _movePoints[2].position) >= 0.1f)
+        while (Vector3.Distance(car.position, _movePoints[2].position) >= 0.25f)
         {
             car.position = Vector3.Lerp(car.position, _movePoints[2].position, _carTurnSpeed * Time.deltaTime);
 
             yield return null;
         }
 
-        while (Vector3.Distance(car.position, _movePoints[3].position) >= 0.1f)
+        while (Vector3.Distance(car.position, _movePoints[3].position) >= 1f)
         {
-            car.position = Vector3.Lerp(car.position, _movePoints[3].position, _carTurnSpeed * Time.deltaTime);
+            car.position = Vector3.Lerp(car.position, _movePoints[3].position, _carMoveSpeed * Time.deltaTime);
 
             yield return null;
         }
@@ -106,6 +106,10 @@ public class CarTracker : Singleton<CarTracker>
                 if (_carShooAmount > 0)
                 {
                     StartCoroutine(StartCar());
+                }
+                else
+                {
+                    MinigameManager.Instance.WinMinigame();
                 }
                 // Start move away
             }
