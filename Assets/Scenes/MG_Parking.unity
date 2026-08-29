@@ -3123,10 +3123,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Myvi
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7991206733737399512, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
+    - {fileID: 520668305200218448, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
+    - {fileID: 3033351256990871031, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1749780647672420395, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467392957}
   m_SourcePrefab: {fileID: 100100000, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
 --- !u!4 &734925909 stripped
 Transform:
@@ -5802,6 +5808,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1303838281047144459, guid: afc32677405c9d543a8282f6bfe21ce6, type: 3}
   m_PrefabInstance: {fileID: 1360716183}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1467392950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749780647672420395, guid: ab99ebc27697cd9418d9b38e75518ee7, type: 3}
+  m_PrefabInstance: {fileID: 733392914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467392957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467392950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115804ebff421a94680b185ab5e39234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarParkingMovement
+  _driveSpeed: 800
+  _maxSpeed: 500
+  _turnSpeed: 5000
+  _speedAffectRotationAmount: 0.5
+  _grip: 10
 --- !u!1001 &1470136986
 PrefabInstance:
   m_ObjectHideFlags: 0
