@@ -35,7 +35,7 @@ public class ItemCarSpawner : MonoBehaviour
 
             _nextClearLane = Time.time + clearTime;
 
-            int clearLane = UnityEngine.Random.Range(0, 3);
+            int clearLane = UnityEngine.Random.Range(0, _spawnPoints.Length);
             _clearLane = clearLane;
         }
     }
@@ -53,7 +53,7 @@ public class ItemCarSpawner : MonoBehaviour
             // Get lane
             while (true)
             {
-                lane = UnityEngine.Random.Range(0, 3);
+                lane = UnityEngine.Random.Range(0, _spawnPoints.Length);
                 if (lane != _clearLane) break;
             }
 
