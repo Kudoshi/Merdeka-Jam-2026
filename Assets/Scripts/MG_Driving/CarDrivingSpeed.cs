@@ -11,6 +11,12 @@ public class CarDrivingSpeed : MonoBehaviour
     [SerializeField] private float _shakeDuration;
     [SerializeField] private CarInvincibility _invincibility;
     [SerializeField] private float _invincibilityTime;
+    [SerializeField] private float _minimumSpeed = 2f;
+
+    [Header("Grass shake")]
+    [SerializeField] private float _shakeIntensityGrass;
+    [SerializeField] private float _shakeDurationGrass;
+    [SerializeField] private float _grassSlowSpeed;
 
 
     public static float CurrentSpeed;
@@ -31,6 +37,12 @@ public class CarDrivingSpeed : MonoBehaviour
         {
             CurrentSpeed = _maxSpeed;
         }
+        else if (CurrentSpeed < _minimumSpeed)
+        {
+            CurrentSpeed = _minimumSpeed;
+        }
+
+            Debug.Log(CurrentSpeed);
     }
 
     public void HitObstacle()
@@ -51,6 +63,13 @@ public class CarDrivingSpeed : MonoBehaviour
         {
             CurrentSpeed = 0;
         }
+    }
+
+    public void HitGrassLand()
+    {
+        CinemachineShake.Instance.ShakeCamera(_shakeIntensityGrass, _shakeDurationGrass);
+
+        CurrentSpeed -= _grassSlowSpeed * Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
