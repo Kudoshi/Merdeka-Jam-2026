@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1039511522078425074}
-  - component: {fileID: 1635349275399306024}
   - component: {fileID: 6659849206178562518}
   - component: {fileID: 6247891559449206464}
+  - component: {fileID: 520668305200218448}
+  - component: {fileID: 7991206733737399512}
+  - component: {fileID: 3033351256990871031}
   m_Layer: 0
   m_Name: Myvi-Parking
   m_TagString: Player
@@ -35,23 +37,6 @@ Transform:
   - {fileID: 1149020695164676977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635349275399306024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749780647672420395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 115804ebff421a94680b185ab5e39234, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarParkingMovement
-  _driveSpeed: 900
-  _maxSpeed: 100
-  _turnSpeed: 1000
-  _speedAffectRotationAmount: 3
-  _grip: 2.5
 --- !u!54 &6659849206178562518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -100,6 +85,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.616998, y: 1.6411209, z: 3.601802}
   m_Center: {x: 0.023626804, y: 0.8285396, z: 0.38}
+--- !u!114 &520668305200218448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749780647672420395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e10ff799a33d44199ba16d71fb8996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarDrivingMovement
+  _steerSpeed: 10
+  _rotateSpeed: 2
+  _rotateSpeedBack: 4
+  _maxRotateAngle: 35
+--- !u!114 &7991206733737399512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749780647672420395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d5368ea7e24cd46a30c3ca1ed499d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarDrivingSpeed
+  _startingSpeed: 3
+  _maxSpeed: 100
+  _increaseSpeed: 6.5
+  _shakeIntensity: 5
+  _shakeDuration: 0.4
+  _invincibility: {fileID: 3033351256990871031}
+  _invincibilityTime: 2
+  _minimumSpeed: 1.5
+  _shakeIntensityGrass: 1
+  _shakeDurationGrass: 0.1
+  _grassSlowSpeed: 15
+--- !u!114 &3033351256990871031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749780647672420395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9aa7869135ff8d4ca98cc6454bc8c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarInvincibility
+  _flashTime: 0.2
 --- !u!1001 &610410654026796186
 PrefabInstance:
   m_ObjectHideFlags: 0
