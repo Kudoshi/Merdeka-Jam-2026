@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class CarDrivingMovement : MonoBehaviour
 {
-    [SerializeField] private float _driveSpeed;
-    [SerializeField] private float _driveHitSlow;
     [SerializeField] private float _steerSpeed;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private float _rotateSpeedBack;
