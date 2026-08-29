@@ -14,7 +14,7 @@ public class MinigameManager : Singleton<MinigameManager>
     [SerializeField] private float _transitionToGameEndTime = 2.5f;
     [SerializeField] private float _minTimeScale;
 
-    private GameState _gameLevelType;
+    [SerializeField] private GameState _gameLevelType;
     private MinigameData _currentMinigame = new MinigameData();
 
     // Data
@@ -32,7 +32,6 @@ public class MinigameManager : Singleton<MinigameManager>
 
     public void StartGameSession()
     {
-        _gameLevelType = GameState.TRANSITION_SCENE;
         _minigameRound = 1;
         _currentLife = _lifeMaxCount;
     }
