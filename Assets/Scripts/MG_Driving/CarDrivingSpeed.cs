@@ -1,6 +1,7 @@
 
 using UnityEngine;
 
+[RequireComponent(typeof(CarInvincibility))]
 public class CarDrivingSpeed : MonoBehaviour
 {
     [SerializeField] private float _startingSpeed;
@@ -8,9 +9,13 @@ public class CarDrivingSpeed : MonoBehaviour
     [SerializeField] private float _increaseSpeed;
     [SerializeField] private float _shakeIntensity;
     [SerializeField] private float _shakeDuration;
+    [SerializeField] private CarInvincibility _invincibility;
+    [SerializeField] private float _invincibilityTime;
+
 
     public static float CurrentSpeed;
     public static float MaxSpeed;
+    private bool _invincible = false;
 
     private void Start()
     {
@@ -30,6 +35,16 @@ public class CarDrivingSpeed : MonoBehaviour
 
     public void HitObstacle()
     {
+        CinemachineShake.Instance.ShakeCamera(_shakeIntensity, _shakeDuration);
+
+        _invincibility.TriggerInvincibility(_invincibilityTime);
+        _invincible = true;
+
+        Util.WaitForSeconds(this, () =>
+        {
+            _invincible = false;
+        }, _invincibilityTime);
+
         CurrentSpeed /= 2;
 
         if (CurrentSpeed < 0)
@@ -40,10 +55,11 @@ public class CarDrivingSpeed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (_invincible) return;
+
         if (other.CompareTag("Car"))
         {
             HitObstacle();
-            CinemachineShake.Instance.ShakeCamera(_shakeIntensity, _shakeDuration);
         }
     }
 }
