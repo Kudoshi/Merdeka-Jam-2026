@@ -23,6 +23,8 @@ public class PopInThenOutAnimation : MonoBehaviour
 
     public void PlayPop()
     {
+        SoundManager.Instance.PlaySound("sfx_game_start");
+
         transform.DOKill();
         transform.localScale = Vector3.zero;
 
