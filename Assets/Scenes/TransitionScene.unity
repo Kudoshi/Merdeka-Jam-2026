@@ -2174,7 +2174,7 @@ GameObject:
   - component: {fileID: 1372420666}
   - component: {fileID: 1372420665}
   m_Layer: 0
-  m_Name: Text (TMP)_1
+  m_Name: nowonto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ROUND 12
+  m_text: Now onto
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa7f90fe03715e04fb263248b550af07, type: 2}
   m_sharedMaterial: {fileID: 3680100931033058820, guid: aa7f90fe03715e04fb263248b550af07, type: 2}
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -86.82544, y: 0, z: 0, w: 0}
+  m_margin: {x: -86.82544, y: 0, z: 0, w: -12.968563}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3556,7 +3556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8586463145428683791, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_text
-      value: 'Now onto
+      value: 'ROUND 1
 
 '
       objectReference: {fileID: 0}
