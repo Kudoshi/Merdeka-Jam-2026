@@ -124,7 +124,7 @@ public class MinigameManager : Singleton<MinigameManager>
 
     private void GameEnd()
     {
-        Debug.Log("Game entirely ends");
+        SceneManager.LoadScene("EndGame");
     }
 
     private void Update()

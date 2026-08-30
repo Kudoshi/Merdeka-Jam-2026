@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 2892888915293071487, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2893929785275908520, guid: 847a63e78b982804f887f4825095ec47, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.236423
@@ -374,6 +378,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893929785275908520, guid: 847a63e78b982804f887f4825095ec47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619919938958143086, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848365888223632792, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -523,6 +535,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1632122087178527048, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3622145785005117398, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.09
@@ -566,6 +582,14 @@ PrefabInstance:
     - target: {fileID: 4111683973772006764, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
       propertyPath: m_Name
       value: tree stump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170038335947360706, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134268337586375687, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1734,6 +1758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1632122087178527048, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3622145785005117398, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2121
@@ -1789,6 +1817,14 @@ PrefabInstance:
     - target: {fileID: 4111683973772006764, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
       propertyPath: m_Name
       value: tree stump_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170038335947360706, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134268337586375687, guid: d213952a1e732504c973c7b18ee9d355, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2714,6 +2750,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140427213600559730, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843248463134899850, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976889240490657436, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7281017500638144357, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
       propertyPath: m_Name
       value: rock
@@ -2776,6 +2824,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140427213600559730, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843248463134899850, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976889240490657436, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7281017500638144357, guid: baaf0b2825da1d5489ca7d617b2f5287, type: 3}
       propertyPath: m_Name
       value: rock_1
@@ -2899,6 +2959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2892888915293071487, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2893929785275908520, guid: 847a63e78b982804f887f4825095ec47, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2121
@@ -2949,6 +3013,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893929785275908520, guid: 847a63e78b982804f887f4825095ec47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619919938958143086, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848365888223632792, guid: 847a63e78b982804f887f4825095ec47, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3723,6 +3795,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree
       objectReference: {fileID: 0}
+    - target: {fileID: 3108395422263621380, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3178885125055324243, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3205281377644350686, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.295807
@@ -3761,6 +3841,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3205281377644350686, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315194484210904488, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3951,6 +4035,10 @@ PrefabInstance:
     - target: {fileID: 2489820861834674606, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811082189206423284, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
+      propertyPath: _startingTimer
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8173754202918881791, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_Enabled
@@ -5779,6 +5867,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3108395422263621380, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3178885125055324243, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3205281377644350686, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.52
@@ -5817,6 +5913,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3205281377644350686, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315194484210904488, guid: 38cde52ab6e694640ba196a9a7480b19, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7744,11 +7844,27 @@ PrefabInstance:
     - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 7c1ec08b9689fbe4eb7328c28bf5b00e, type: 2}
+      objectReference: {fileID: 11400000, guid: 624dee177ce05fc4e9b191875b2ca1d4, type: 2}
+    - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.78867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5252689
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.36160192
+      objectReference: {fileID: 0}
     - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -8286228409580794659, guid: 7c1ec08b9689fbe4eb7328c28bf5b00e, type: 2}
+      objectReference: {fileID: -5330006233179251538, guid: 624dee177ce05fc4e9b191875b2ca1d4, type: 2}
+    - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4291397212
+      objectReference: {fileID: 0}
     - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

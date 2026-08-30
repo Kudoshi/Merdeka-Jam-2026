@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -9,7 +10,25 @@ public class DistanceTracker : MonoBehaviour
     [SerializeField, ReadOnly] private float _distance;
 
     bool _gameEnded;
-    
+
+    private void OnEnable()
+    {
+        MinigameManager.OnGameStateChanged += GameStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        MinigameManager.OnGameStateChanged -= GameStateChanged;
+
+    }
+
+    private void GameStateChanged(GameState state)
+    {
+        if (state != GameState.MINIGAME_SCENE)
+        {
+            _gameEnded = true;
+        }
+    }
 
     private void Update()
     {

@@ -521,6 +521,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4811082189206423284, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
+      propertyPath: _startingTimer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8173754202918881791, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -559,7 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0418b134df9488540a40da1be430acf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistanceTracker
-  _distanceGoal: 200
+  _distanceGoal: 600
   _distanceText: {fileID: 1649831284}
   _distance: 0
 --- !u!4 &1005053916
@@ -861,6 +865,10 @@ PrefabInstance:
     - target: {fileID: 8084135882720693672, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668917466051057803, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8824289863365646314, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_Name

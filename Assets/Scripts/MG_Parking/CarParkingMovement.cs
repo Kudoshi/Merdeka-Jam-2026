@@ -51,11 +51,24 @@ public class CarParkingMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            _input.x = 1.0f;
+
+            if (_input.y == -1f)
+            {
+                _input.x = -1f;
+            }
+            else
+                _input.x = 1.0f;
+
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            _input.x = -1f;
+            if (_input.y == -1f)
+            {
+                _input.x = 1f;
+
+            }
+            else
+                _input.x = -1f;
         }
 
         Steer();
