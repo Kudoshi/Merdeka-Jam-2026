@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinigameManager
   _minigameSO: {fileID: 11400000, guid: 8b209c2949b267d4996873b43e30f531, type: 2}
-  _lifeMaxCount: 5
+  _lifeMaxCount: 3
   _timeWaitAfterMinigameEnd: 3
   _transitionToGameEndTime: 1.5
   _minTimeScale: 0.1

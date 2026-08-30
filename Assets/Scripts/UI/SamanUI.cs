@@ -29,7 +29,7 @@ public class SamanUI : MonoBehaviour
     private void Start()
     {
         int lifeLeft = MinigameManager.Instance.CurrentLife;
-        int samans = 5-lifeLeft;
+        int samans = 3-lifeLeft;
 
         for (int i = 0; i < samans; i++)
         {
@@ -42,7 +42,7 @@ public class SamanUI : MonoBehaviour
         if (state == GameState.MINIGAME_SCENE_LOSE)
         {
             int lifeLeft = MinigameManager.Instance.CurrentLife;
-            int samans = 5 - lifeLeft;
+            int samans = 3 - lifeLeft;
 
             for (int i = 0; i < samans; i++)
             {
