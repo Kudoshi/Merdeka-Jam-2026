@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7511558181221131132, guid: 235206e80591a8c499e53cf0af567652, type: 3}
     m_RemovedGameObjects: []
@@ -75,8 +79,71 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 235206e80591a8c499e53cf0af567652, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6637520573453011036}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2892888915293071487}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7619919938958143086}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8848365888223632792}
   m_SourcePrefab: {fileID: 100100000, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+--- !u!1 &2549773383327505170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 235206e80591a8c499e53cf0af567652, type: 3}
+  m_PrefabInstance: {fileID: 3432856394497680963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2892888915293071487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549773383327505170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1145484, y: 1.0275972, z: 1}
+  m_Center: {x: 0.057274252, y: 0.48295093, z: 0}
+--- !u!114 &7619919938958143086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549773383327505170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38386a5c4b158eb45afbb87af9913246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  _obstacleType: 8
+--- !u!114 &8848365888223632792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2549773383327505170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed219384eeab0e40bf74c1c6faba42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemMovement
+  _extraSpeed: -20
+  _isConsistentSpeed: 0
+  _consistentSpeed: 0
 --- !u!4 &2893929785275908520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 235206e80591a8c499e53cf0af567652, type: 3}

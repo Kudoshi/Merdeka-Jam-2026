@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree stump
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7511558181221131132, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
     m_RemovedGameObjects: []
@@ -75,13 +79,76 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9149183861692250983}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1632122087178527048}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7134268337586375687}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6170038335947360706}
   m_SourcePrefab: {fileID: 100100000, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
 --- !u!4 &3622145785005117398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
   m_PrefabInstance: {fileID: 3877259650220288061}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4111683973772006764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e05a0cbecd01b294ba3d097336581d9c, type: 3}
+  m_PrefabInstance: {fileID: 3877259650220288061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1632122087178527048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111683973772006764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.49934334, z: 1}
+  m_Center: {x: 0, y: 0.25032833, z: 0}
+--- !u!114 &7134268337586375687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111683973772006764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed219384eeab0e40bf74c1c6faba42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemMovement
+  _extraSpeed: -20
+  _isConsistentSpeed: 0
+  _consistentSpeed: 0
+--- !u!114 &6170038335947360706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111683973772006764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38386a5c4b158eb45afbb87af9913246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  _obstacleType: 7
 --- !u!1001 &8751293704710020236
 PrefabInstance:
   m_ObjectHideFlags: 0
