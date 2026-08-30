@@ -2399,7 +2399,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadblock3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 949015724193074073, guid: 3f69592abbf197c41bc87583061c3cda, type: 3}
+    - {fileID: 872269937619133466, guid: 3f69592abbf197c41bc87583061c3cda, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
