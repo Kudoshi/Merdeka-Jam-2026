@@ -154,7 +154,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7511558181221131132, guid: 64547e5c140a6874d8aafd8bdabbb08e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64547e5c140a6874d8aafd8bdabbb08e, type: 3}
