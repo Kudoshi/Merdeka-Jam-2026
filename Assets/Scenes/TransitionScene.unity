@@ -827,6 +827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 578347018796326822, guid: d637bf64650b7534a8b2a8e709cdb0eb, type: 3}
+      propertyPath: _gameLevelType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3661391916173753775, guid: d637bf64650b7534a8b2a8e709cdb0eb, type: 3}
       propertyPath: m_Name
       value: MinigameManager
