@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
 
     private void StartBtnClicked()
     {
+        SoundManager.Instance.PlaySound("sfx_engine_start");
+
         SceneManager.LoadScene("TransitionScene");
     }
 
