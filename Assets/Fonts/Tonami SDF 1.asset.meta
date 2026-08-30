@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Fonts/Tonami SDF 1.asset.meta
 guid: 62ec80adc8821f342b498f89947d1af2
+========
+guid: 6be4d1ebdca4cce4b876b67e009e549b
+>>>>>>>> kudo:Assets/Fonts/Tonami SDF.asset.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

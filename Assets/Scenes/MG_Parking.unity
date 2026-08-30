@@ -2443,6 +2443,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5763207420111013321, guid: d637bf64650b7534a8b2a8e709cdb0eb, type: 3}
+      propertyPath: m_TestSoundName
+      value: sfx_test
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

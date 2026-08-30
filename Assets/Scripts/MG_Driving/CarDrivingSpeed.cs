@@ -49,6 +49,8 @@ public class CarDrivingSpeed : MonoBehaviour
     public void HitObstacle(bool triggerInvincibility)
     {
         CinemachineShake.Instance.ShakeCamera(_shakeIntensity, _shakeDuration);
+        SoundVariationizer sfx = new SoundVariationizer("sfx_car_hit_", 0.15f, 0, 3);
+        SoundManager.Instance.PlaySound(sfx);
 
         if (triggerInvincibility)
         {

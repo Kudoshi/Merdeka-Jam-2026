@@ -99,4 +99,13 @@ public class CarParkingMovement : MonoBehaviour
 
         _rb.linearVelocity = transform.TransformDirection(localVelocity);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!collision.collider.CompareTag("Player"))
+        {
+            SoundVariationizer sfx = new SoundVariationizer("sfx_car_hit_", 0.15f, 0, 3);
+            SoundManager.Instance.PlaySound(sfx);
+        }
+    }
 }

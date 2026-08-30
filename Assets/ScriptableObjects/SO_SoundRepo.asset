@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_SoundRepository
   SoundList:
   - SoundName: sfx_test
-    Clip: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 72f3ca628bb96574b94c6a28f39eceda, type: 3}
     SoundGroup: 0
     AttachedParent: {fileID: 0}
     SoundSetting:
       GeneralAudioSettings:
-        Volume: 0
-        Pitch: 0
+        Volume: 1
+        Pitch: 1
         Loop: 0
-        Priority: 0
+        Priority: 256
       BypassSettings:
         BypassEffects: 0
         BypassListenerEffects: 0
@@ -35,7 +35,271 @@ MonoBehaviour:
         DopplerLevel: 0
         Spread: 0
         RolloffMode: 0
-        MinDistance: 0
-        MaxDistance: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_car_hit_0
+    Clip: {fileID: 8300000, guid: 72f3ca628bb96574b94c6a28f39eceda, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_car_hit_1
+    Clip: {fileID: 8300000, guid: 35a47d0e79934f74891c08feaed26129, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_car_hit_2
+    Clip: {fileID: 8300000, guid: fda6c2914b25d8c40b6d927a71a5ea93, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_car_horn
+    Clip: {fileID: 8300000, guid: 01da477707091db4ba200ef16043263d, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_engine_loop
+    Clip: {fileID: 8300000, guid: d5458de209a2be64ca8830b1116aef71, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_engine_start
+    Clip: {fileID: 8300000, guid: ded6969ade723f84eb43441fe20e42d3, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_game_fail
+    Clip: {fileID: 8300000, guid: b2962b302c5886845a9239f59466cd11, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_game_start
+    Clip: {fileID: 8300000, guid: 60533432fe798b34297d47b3369de8e5, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_game_win
+    Clip: {fileID: 8300000, guid: e307c2a8a2760c54aa62377dcd571a1a, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_ui_hover
+    Clip: {fileID: 8300000, guid: 66675f0cd5f086044bb012871e2db093, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
+  - SoundName: sfx_ui_press
+    Clip: {fileID: 8300000, guid: 4c0770f577ed24a439f4b2a4f416e3f1, type: 3}
+    SoundGroup: 0
+    AttachedParent: {fileID: 0}
+    SoundSetting:
+      GeneralAudioSettings:
+        Volume: 1
+        Pitch: 1
+        Loop: 0
+        Priority: 256
+      BypassSettings:
+        BypassEffects: 0
+        BypassListenerEffects: 0
+        BypassReverbZones: 0
+      StereoSettings:
+        PanStereo: -1
+        SpatialBlend: 0
+        ReverbZoneMix: 0
+      RolloffSettings:
+        DopplerLevel: 0
+        Spread: 0
+        RolloffMode: 0
+        MinDistance: 1
+        MaxDistance: 500
   BGMList: []
   DialoguePath: Dialogues/Voicelines

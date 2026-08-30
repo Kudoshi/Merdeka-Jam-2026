@@ -49,6 +49,8 @@ public class MinigameManager : Singleton<MinigameManager>
         }
         Debug.Log("Game End");
 
+        SoundManager.Instance.PlaySound("sfx_game_fail");
+
         OnGameStateChanged?.Invoke(GameState.MINIGAME_SCENE_LOSE);
 
         StartCoroutine(TransitionToGameEndCr());
@@ -58,6 +60,8 @@ public class MinigameManager : Singleton<MinigameManager>
     {
         OnGameStateChanged?.Invoke(GameState.MINIGAME_SCENE_WIN);
         Debug.Log("Game Win");
+        SoundManager.Instance.PlaySound("sfx_game_win");
+
         StartCoroutine(TransitionToGameEndCr());
 
     }
