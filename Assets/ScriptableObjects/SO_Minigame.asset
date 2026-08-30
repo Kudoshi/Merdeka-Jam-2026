@@ -15,5 +15,4 @@ MonoBehaviour:
   MinigameData:
   - SceneName: MG_Beam
   - SceneName: MG_DriveDistance
-  - SceneName: MG_DriveIntoThings
   - SceneName: MG_Parking

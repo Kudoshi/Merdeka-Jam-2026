@@ -52,7 +52,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -76,7 +76,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -100,7 +100,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -124,7 +124,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -148,7 +148,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -172,7 +172,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -196,7 +196,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -211,7 +211,7 @@ MonoBehaviour:
     AttachedParent: {fileID: 0}
     SoundSetting:
       GeneralAudioSettings:
-        Volume: 1
+        Volume: 0.5
         Pitch: 1
         Loop: 0
         Priority: 256
@@ -220,7 +220,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -244,7 +244,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -268,7 +268,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
@@ -292,7 +292,7 @@ MonoBehaviour:
         BypassListenerEffects: 0
         BypassReverbZones: 0
       StereoSettings:
-        PanStereo: -1
+        PanStereo: 0
         SpatialBlend: 0
         ReverbZoneMix: 0
       RolloffSettings:
