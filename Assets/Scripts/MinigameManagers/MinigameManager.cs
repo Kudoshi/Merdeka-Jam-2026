@@ -108,8 +108,8 @@ public class MinigameManager : Singleton<MinigameManager>
         if (_gameLevelType == GameState.TRANSITION_SCENE)
         {
             _gameLevelType =  GameState.MINIGAME_SCENE;
-            MinigameData minigame = _minigameSO.RandomizeMinigameData(_currentMinigame.SceneName);
-            SceneManager.LoadScene(minigame.SceneName);
+            _currentMinigame = _minigameSO.RandomizeMinigameData(_currentMinigame.SceneName);
+            SceneManager.LoadScene(_currentMinigame.SceneName);
         }
         // Go into transition scene
         else

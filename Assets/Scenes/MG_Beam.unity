@@ -745,7 +745,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2489820861834674606, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811082189206423284, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
+      propertyPath: _startingTimer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811082189206423284, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
+      propertyPath: _timerDecreaseMultiplier
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 8173754202918881791, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_Enabled
@@ -1137,6 +1145,63 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &1574240508
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1393339610593512354, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_Name
+      value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4567466
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.6558976
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390816401005298613, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e9ec678c8788ef47956e100de175afd, type: 3}
 --- !u!1 &1692333579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_text
-      value: Honk and shoo the cars
+      value: Keep honking to shoo the cars away
       objectReference: {fileID: 0}
     - target: {fileID: 7826314239749267104, guid: 13c85d543705fcf4fbb5b8360fa829a0, type: 3}
       propertyPath: m_fontAsset
@@ -1960,3 +2025,4 @@ SceneRoots:
   - {fileID: 217199719}
   - {fileID: 1789421877}
   - {fileID: 1820991187}
+  - {fileID: 1574240508}

@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: _startingTimer
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4811082189206423284, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
+      propertyPath: _timerDecreaseMultiplier
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 8173754202918881791, guid: 89980a52bc8f95d46acb176d505c5cf9, type: 3}
       propertyPath: m_Enabled
       value: 1
